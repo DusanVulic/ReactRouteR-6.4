@@ -58,3 +58,32 @@ nav a.active {
     /* background: var(--primary); */
     border-bottom: 1px solid white;
 }
+
+
+/*** PAGES */
+
+.home {
+    height: 40vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home h3 {
+    margin-top: 1rem;
+}
+
+.content p {
+    margin-top: 1rem;
+}
+
+.about {
+    height: 40vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h3 {
+    margin-top: 1rem;
+}
