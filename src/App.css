@@ -32,3 +32,29 @@ button {
     background: var(--primary);
     cursor: pointer;
 }
+
+
+/** NAVIGATION */
+
+nav {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+
+nav h1 {
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 6px;
+}
+
+nav a.active {
+    /* background: var(--primary); */
+    border-bottom: 1px solid white;
+}
