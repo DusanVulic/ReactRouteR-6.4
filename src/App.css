@@ -2,14 +2,33 @@
 
 /* base styles */
 
+:root {
+    --primary: #bc4123;
+    --secondary: #2b3452;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand";
-    color: #333;
+    color: #fff;
+}
+
+body {
+    padding: 20px;
+    background: var(--secondary);
 }
 
 .App {
     text-align: center;
+}
+
+button {
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    background: var(--primary);
+    cursor: pointer;
 }
