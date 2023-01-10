@@ -38,7 +38,6 @@ button {
 
 .main-nav {
     display: flex;
-    gap: 16px;
     justify-content: flex-end;
     margin: 0 auto;
     padding: 1rem;
@@ -52,6 +51,11 @@ button {
 .main-nav a {
     text-decoration: none;
     padding: 6px;
+    margin-right: 35px;
+}
+
+.main-nav a:hover {
+    border-bottom: 1px solid white;
 }
 
 .main-nav a.active {
@@ -175,4 +179,14 @@ form label span {
 
 .error-link {
     text-decoration: none;
+}
+
+
+/*** CAREERS  */
+
+.careers {
+    height: 40vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
