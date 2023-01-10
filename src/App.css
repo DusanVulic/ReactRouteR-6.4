@@ -201,6 +201,10 @@ form label span {
     cursor: pointer;
 }
 
+.careers a :hover {
+    color: #bc4123;
+}
+
 .careers article {
     text-decoration: none;
     cursor: pointer;
@@ -210,4 +214,18 @@ form label span {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 15px 20px;
+}
+
+
+/**carrer-details */
+
+.carrer-details {
+    width: 80%;
+    max-width: 900px;
+    margin: 5rem auto;
+}
+
+.carrer-details h3,
+.carrer-details p {
+    margin-bottom: 2rem;
 }
