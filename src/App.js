@@ -7,11 +7,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Home from "./components/Home";
-import About from "./components/About";
-
 // layout
 import RootLayout from "./layout/RootLayout";
+import HelpLayout from "./layout/HelpLayout";
+
+//components
+
+import Home from "./components/Home";
+import About from "./components/About";
+import Faq from "./components/Faq";
+import Contact from "./components/Contact";
 
 // old way --- with previous versions of router
 // function App() {
@@ -35,6 +40,10 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="help" element={<HelpLayout />}>
+        <Route path="faq" element={<Faq />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
     </Route>
   )
 );
