@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 
 const About = () => {
+  const [user, setUser] = useState("Mario");
+
+  if (!user) {
+    return <Navigate to="/" />;
+  }
+
   return (
     <section className="about">
       <h3>About us </h3>
@@ -27,6 +34,8 @@ const About = () => {
           molestiae suscipit quasi.
         </p>
       </div>
+      <button onClick={() => setUser(null)}> change user </button>
+      <p>{user}</p>
     </section>
   );
 };
