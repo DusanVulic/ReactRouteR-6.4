@@ -54,13 +54,16 @@ const router = createBrowserRouter(
         <Route path="contact" element={<Contact />} />
       </Route>
 
-      <Route path="careers" element={<CareerLayout />}>
+      <Route
+        path="careers"
+        element={<CareerLayout />}
+        errorElement={<CareerError />}
+      >
         <Route index element={<Careers />} loader={careerLoader} />
         <Route
           path=":id"
           element={<CareerDetail />}
           loader={carrerDetailsLoader}
-          errorElement={<CareerError />}
         />
       </Route>
       {/* ERROR ROUTE */}

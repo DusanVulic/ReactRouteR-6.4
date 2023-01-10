@@ -6,9 +6,9 @@ const CareerError = () => {
 
   return (
     <div className="career-error">
-      <h2> Rrror</h2>
+      <h2> Error</h2>
       <p> {error.message}</p>
-      <Link to="/"> Back top home page</Link>
+      <Link to="/"> Back to the home page</Link>
     </div>
   );
 };

@@ -229,3 +229,34 @@ form label span {
 .carrer-details p {
     margin-bottom: 2rem;
 }
+
+
+/****ERROR PAGES */
+
+.career-error {
+    width: 90%;
+    max-width: 600px;
+    border: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5rem auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.career-error h2 {
+    margin-bottom: 1rem;
+}
+
+.career-error p {
+    margin-bottom: 1rem;
+}
+
+.career-error a {
+    margin-top: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.career-error a:hover {
+    color: #bc4123;
+}

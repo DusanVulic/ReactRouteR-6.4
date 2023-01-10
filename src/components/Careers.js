@@ -29,6 +29,12 @@ export default Careers;
 //loader function
 
 export const careerLoader = async () => {
-  const response = await fetch("http://localhost:4000/careers");
+  const response = await fetch("http://localhost:4000/careerss");
+
+  if (!response.ok) {
+    throw Error(
+      "NO DATA AT THIS MOMENT - Please check did you run json server in VSC terminal"
+    );
+  }
   return response.json();
 };
