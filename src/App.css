@@ -190,3 +190,24 @@ form label span {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.careers h3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.careers a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.careers article {
+    text-decoration: none;
+    cursor: pointer;
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px 20px;
+}

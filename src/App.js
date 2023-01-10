@@ -18,7 +18,8 @@ import About from "./components/About";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
-import Careers from "./components/Careers";
+import Careers, { careerLoader } from "./components/Careers";
+import CareerDetail, { carrerDetailsLoader } from "./components/CareerDetail";
 
 // old way --- with previous versions of router
 // function App() {
@@ -50,8 +51,14 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="careers" element={<CareerLayout />}>
-        <Route index element={<Careers />} />
+        <Route index element={<Careers />} loader={careerLoader} />
+        <Route
+          path=":id"
+          element={<CareerDetail />}
+          loader={carrerDetailsLoader}
+        />
       </Route>
+      {/* ERROR ROUTE */}
       <Route path="*" element={<Error />} />
     </Route>
   )
