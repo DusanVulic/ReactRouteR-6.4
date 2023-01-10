@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 
 const About = () => {
-  const [user, setUser] = useState("Mario");
+  const [user, setUser] = useState(" we have user");
 
   if (!user) {
-    return <Navigate to="/" />;
+    return <Navigate to="/" replace={true} />;
   }
 
   return (
@@ -34,7 +34,7 @@ const About = () => {
           molestiae suscipit quasi.
         </p>
       </div>
-      <button onClick={() => setUser(null)}> change user </button>
+      <button onClick={() => setUser(null)}> Logout/ remove user </button>
       <p>{user}</p>
     </section>
   );
