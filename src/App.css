@@ -96,11 +96,10 @@ button {
 /*** HELP */
 
 .help-layout {
-    padding: 20px;
-}
-
-.help-layout h3 {
-    margin: 1rem;
+    height: 40vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .help_nav {
@@ -126,6 +125,11 @@ button {
 
 
 /**FAQ */
+
+.faq h3 {
+    text-align: center;
+    margin: 1.5rem 0;
+}
 
 .question {
     width: 90%;
@@ -259,4 +263,43 @@ form label span {
 
 .career-error a:hover {
     color: #bc4123;
+}
+
+
+/**** BREADCRUMBS */
+
+.crumb a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 
+.breadcrumbs {
+    background: #bc4123;
+    display: flex;
+} */
+
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.breadcrumbs>* {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.breadcrumbs .crumb:after {
+    content: '>';
+    margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child:after {
+    display: none;
+}
+
+.breadcrumbs .crumb a {
+    color: #ddd;
+    font-weight: bold;
 }
