@@ -17,6 +17,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
+import Error from "./components/Error";
 
 // old way --- with previous versions of router
 // function App() {
@@ -44,6 +45,7 @@ const router = createBrowserRouter(
         <Route path="faq" element={<Faq />} />
         <Route path="contact" element={<Contact />} />
       </Route>
+      <Route path="*" element={<Error />} />
     </Route>
   )
 );

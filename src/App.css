@@ -158,3 +158,21 @@ form textarea {
 form label span {
     margin-bottom: 10px;
 }
+
+
+/*** Error page */
+
+.error-btn {
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    background: var(--primary);
+    cursor: pointer;
+    display: block;
+    margin: 4rem auto;
+}
+
+.error-link {
+    text-decoration: none;
+}
