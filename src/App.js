@@ -20,6 +20,10 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Careers, { careerLoader } from "./components/Careers";
 import CareerDetail, { carrerDetailsLoader } from "./components/CareerDetail";
+import CareerError from "./components/CareerError";
+
+//in order to start app...please start json server
+// json-server -p 4000 -w ./data/db.json
 
 // old way --- with previous versions of router
 // function App() {
@@ -56,6 +60,7 @@ const router = createBrowserRouter(
           path=":id"
           element={<CareerDetail />}
           loader={carrerDetailsLoader}
+          errorElement={<CareerError />}
         />
       </Route>
       {/* ERROR ROUTE */}
